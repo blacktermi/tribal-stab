@@ -1,8 +1,7 @@
 # Tribal Stab
 
-Stabilisation des vidéos tenues à la main. C'est l'algorithme « stab2 » écrit pour les rushs de tableaux de Tribal Print
-(26 octobre 2026), sorti de la bibliothèque de rushs pour servir partout : rushs produit, vidéos YouTube, tournages clients
-de Tribal Studio.
+Stabilisation des vidéos tenues à la main : rushs produit, vidéos YouTube, tournages. C'est l'algorithme « stab2 », écrit
+le 26 octobre 2026 pour des vidéos produit où des mains présentent l'objet à la caméra, puis sorti en outil autonome.
 
 Sur les 12 extraits du banc d'essai (mains qui présentent, tableaux soulevés, caméra qui bascule, gros plans), la secousse
 du mur passe de 13,8 px à 4,7 px en 4K (−66 %), mieux sur 10 extraits sur 10. Les deux témoins restent bons : le plan fixe
@@ -89,6 +88,6 @@ MIT (voir `LICENSE`) : libre d'utiliser, de modifier et de redistribuer, en gard
 
 ## Historique
 
-- **1.0.0 (27/10/2026)** : sortie de `stab2.py` (bibliothèque de rushs Tribal Print) en outil autonome. Le calcul reste
+- **1.0.0 (27/10/2026)** : sortie de `stab2.py` en outil autonome. Le calcul reste
   le même : sur les rushs, corrections, rapports et images rendues sont identiques à l'ancienne version. Ajouts : taille et cadence lues dans la
   vidéo, son recopié, vidéo entière ou dossier, ligne de commande, test.

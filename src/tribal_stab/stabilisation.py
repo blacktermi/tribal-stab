@@ -1,5 +1,5 @@
-"""Stabilisation d'une vidéo tenue à la main : l'algorithme « stab2 » du chantier stabilisation de Tribal Print (26/10/2026),
-sorti de la bibliothèque de rushs pour servir partout (rushs, vidéos YouTube, tournages clients).
+"""Stabilisation d'une vidéo tenue à la main : l'algorithme « stab2 » (26/10/2026), écrit pour des vidéos produit puis sorti
+en outil autonome pour servir partout (rushs, vidéos YouTube, tournages clients).
 
 Quatre étapes :
   1. analyser : des repères sur le décor (coins, arêtes) suivis d'une image à l'autre au sous-pixel et vérifiés dans les
@@ -22,7 +22,7 @@ import cv2
 import numpy as np
 
 MESURE = 540                     # petit côté de l'image d'analyse ; en 4K, 1 px d'analyse = 4 px
-# Réglage retenu par le banc d'essai de Tribal Print (36 combinaisons sur 12 extraits, 26/10/2026) :
+# Réglage retenu par le banc d'essai (36 combinaisons sur 12 extraits, 26/10/2026) :
 # zone « image » (repères partout) ou « bords » (quand des mains présentent un objet au centre) ;
 # modèle « complet » (glissement + rotation + zoom) ou « glissement » seul ; marge max 10 % ; lissage 2 s.
 REGLAGE = {"zone": "image", "modele": "complet", "marge_max": 0.10, "sigma": 2.0}
