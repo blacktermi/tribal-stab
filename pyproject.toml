@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,8 +8,14 @@ version = "1.0.0"
 description = "Stabilisation des vidéos tenues à la main : repères sur le décor, vote RANSAC, trépied virtuel, zoom minimal sans bord noir, rendu sous-pixel."
 readme = "README.md"
 requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Tribal Enterprises SARL" }]
 dependencies = ["numpy>=1.24", "opencv-python-headless>=4.8"]
+keywords = ["stabilisation", "video", "stabilization", "opencv", "ffmpeg", "ransac"]
+
+[project.urls]
+Source = "https://github.com/blacktermi/tribal-stab"
 
 [project.scripts]
 tribal-stab = "tribal_stab.cli:main"

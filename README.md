@@ -83,6 +83,10 @@ avec une méthode indépendante (corrélation de phase). Résultat : 1,38 px d'u
 - Un plan sans décor fixe visible (ciel, mur uni, tout bouge) se stabilise mal : le rapport le signale par une faible
   `part_decor` et des `rates`.
 
+## Licence
+
+MIT (voir `LICENSE`) : libre d'utiliser, de modifier et de redistribuer, en gardant la mention de copyright.
+
 ## Historique
 
 - **1.0.0 (27/10/2026)** : sortie de `stab2.py` (bibliothèque de rushs Tribal Print) en outil autonome. Le calcul reste
